@@ -80,6 +80,10 @@
         "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
+        "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\search_patient.xml",
+        "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\src\\main\\res\\layout\\search_patient.xml"
+    },
+    {
         "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_list_menu_item_icon.xml"
     },

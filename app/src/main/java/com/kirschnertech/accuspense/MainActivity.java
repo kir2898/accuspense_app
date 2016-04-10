@@ -1,5 +1,6 @@
 package com.kirschnertech.accuspense;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,18 +15,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.search_patient);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
     }
 
     @Override
@@ -48,5 +49,27 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * AttemptConnection
+     * class that will attempt to connect to a server that is specified in the current working
+     * layout that has an ip address specified
+     * currently works with search_patient.xml
+     */
+    public class AttemptConnection extends AsyncTask<String[],Void,String>
+    {
+
+        /**
+         * doInBackground
+         * This function will attempt to make a connection in the background, currently works with
+         * the search_patient.xml file to search for a patient on the database
+         * @param params
+         * @return
+         */
+        @Override
+        protected String doInBackground(String[]... params) {
+            return null;
+        }
     }
 }

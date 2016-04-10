@@ -259,4 +259,7 @@
         <item name="android:colorControlHighlight">?attr/colorControlHighlight</item>
         <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
     </style>
+    <style name="editTextStyle">
+
+    </style>
 </resources>

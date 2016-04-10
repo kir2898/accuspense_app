@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Patient Database"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:editable="false"
+        android:textSize="14pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ip Address: "
+        android:id="@+id/textView"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/search_patient_ip"
+        android:layout_width="fill_parent"
+        android:layout_height="12pt"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="12pt"
+        android:id="@+id/textView3"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/search_patient_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:background="#fefefe"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:textSize="12pt"
+        android:id="@+id/textView4"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:textSize="12pt"
+        android:background="#fefefe"
+        android:id="@+id/editText"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:textSize="12pt"
+        android:id="@+id/search_patient_connect"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
