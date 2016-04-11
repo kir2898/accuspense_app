@@ -2013,7 +2013,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0054;
         public static final int action_mode_bar_stub=0x7f0c0053;
         public static final int action_mode_close_button=0x7f0c003c;
-        public static final int action_settings=0x7f0c007d;
+        public static final int action_settings=0x7f0c007f;
         public static final int activity_chooser_view_content=0x7f0c003d;
         public static final int alertTitle=0x7f0c0047;
         public static final int always=0x7f0c002b;
@@ -2089,6 +2089,7 @@ containing a value of this type.
         public static final int search_patient_full_name=0x7f0c0079;
         public static final int search_patient_ip=0x7f0c0077;
         public static final int search_patient_phone=0x7f0c007b;
+        public static final int search_patient_response=0x7f0c007e;
         public static final int search_plate=0x7f0c005f;
         public static final int search_src_text=0x7f0c0060;
         public static final int search_voice_btn=0x7f0c0064;
@@ -2114,6 +2115,7 @@ containing a value of this type.
         public static final int textView2=0x7f0c0075;
         public static final int textView3=0x7f0c0078;
         public static final int textView4=0x7f0c007a;
+        public static final int textView5=0x7f0c007d;
         public static final int time=0x7f0c006e;
         public static final int title=0x7f0c0043;
         public static final int title_template=0x7f0c0046;
@@ -2177,10 +2179,11 @@ containing a value of this type.
         public static final int notification_template_part_chronometer=0x7f040028;
         public static final int notification_template_part_time=0x7f040029;
         public static final int search_patient=0x7f04002a;
-        public static final int select_dialog_item_material=0x7f04002b;
-        public static final int select_dialog_multichoice_material=0x7f04002c;
-        public static final int select_dialog_singlechoice_material=0x7f04002d;
-        public static final int support_simple_spinner_dropdown_item=0x7f04002e;
+        public static final int search_patient_response=0x7f04002b;
+        public static final int select_dialog_item_material=0x7f04002c;
+        public static final int select_dialog_multichoice_material=0x7f04002d;
+        public static final int select_dialog_singlechoice_material=0x7f04002e;
+        public static final int support_simple_spinner_dropdown_item=0x7f04002f;
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;

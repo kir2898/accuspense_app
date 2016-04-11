@@ -520,7 +520,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c0054
 int id action_mode_bar_stub 0x7f0c0053
 int id action_mode_close_button 0x7f0c003c
-int id action_settings 0x7f0c007d
+int id action_settings 0x7f0c007f
 int id activity_chooser_view_content 0x7f0c003d
 int id alertTitle 0x7f0c0047
 int id always 0x7f0c002b
@@ -596,6 +596,7 @@ int id search_patient_connect 0x7f0c007c
 int id search_patient_full_name 0x7f0c0079
 int id search_patient_ip 0x7f0c0077
 int id search_patient_phone 0x7f0c007b
+int id search_patient_response 0x7f0c007e
 int id search_plate 0x7f0c005f
 int id search_src_text 0x7f0c0060
 int id search_voice_btn 0x7f0c0064
@@ -621,6 +622,7 @@ int id textView 0x7f0c0076
 int id textView2 0x7f0c0075
 int id textView3 0x7f0c0078
 int id textView4 0x7f0c007a
+int id textView5 0x7f0c007d
 int id time 0x7f0c006e
 int id title 0x7f0c0043
 int id title_template 0x7f0c0046
@@ -680,10 +682,11 @@ int layout notification_template_media 0x7f040027
 int layout notification_template_part_chronometer 0x7f040028
 int layout notification_template_part_time 0x7f040029
 int layout search_patient 0x7f04002a
-int layout select_dialog_item_material 0x7f04002b
-int layout select_dialog_multichoice_material 0x7f04002c
-int layout select_dialog_singlechoice_material 0x7f04002d
-int layout support_simple_spinner_dropdown_item 0x7f04002e
+int layout search_patient_response 0x7f04002b
+int layout select_dialog_item_material 0x7f04002c
+int layout select_dialog_multichoice_material 0x7f04002d
+int layout select_dialog_singlechoice_material 0x7f04002e
+int layout support_simple_spinner_dropdown_item 0x7f04002f
 int menu menu_main 0x7f0d0000
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
