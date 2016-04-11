@@ -12,16 +12,16 @@
         "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
-        "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_media.xml"
+        "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\layout\\design_navigation_item_header.xml"
+        "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_media.xml"
     },
     {
         "merged": "B:\\Google Drive\\Senior Project\\project\\android_project\\Accuspense\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",

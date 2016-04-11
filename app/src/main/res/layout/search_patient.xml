@@ -23,8 +23,9 @@
     <EditText
         android:id="@+id/search_patient_ip"
         android:layout_width="fill_parent"
-        android:layout_height="12pt"
+        android:layout_height="wrap_content"
         android:background="#fefefe"
+        android:text="158.83.66.57"
         android:textSize="12pt"
         />
 
@@ -60,7 +61,7 @@
         android:ems="10"
         android:textSize="12pt"
         android:background="#fefefe"
-        android:id="@+id/editText"
+        android:id="@+id/search_patient_phone"
         />
 
     <Button

@@ -2037,7 +2037,6 @@ containing a value of this type.
         public static final int dialog=0x7f0c0030;
         public static final int disableHome=0x7f0c000d;
         public static final int dropdown=0x7f0c0031;
-        public static final int editText=0x7f0c007b;
         public static final int edit_query=0x7f0c0059;
         public static final int end=0x7f0c0020;
         public static final int end_padder=0x7f0c0074;
@@ -2089,6 +2088,7 @@ containing a value of this type.
         public static final int search_patient_connect=0x7f0c007c;
         public static final int search_patient_full_name=0x7f0c0079;
         public static final int search_patient_ip=0x7f0c0077;
+        public static final int search_patient_phone=0x7f0c007b;
         public static final int search_plate=0x7f0c005f;
         public static final int search_src_text=0x7f0c0060;
         public static final int search_voice_btn=0x7f0c0064;

@@ -544,7 +544,6 @@ int id default_activity_button 0x7f0c0040
 int id dialog 0x7f0c0030
 int id disableHome 0x7f0c000d
 int id dropdown 0x7f0c0031
-int id editText 0x7f0c007b
 int id edit_query 0x7f0c0059
 int id end 0x7f0c0020
 int id end_padder 0x7f0c0074
@@ -596,6 +595,7 @@ int id search_mag_icon 0x7f0c005e
 int id search_patient_connect 0x7f0c007c
 int id search_patient_full_name 0x7f0c0079
 int id search_patient_ip 0x7f0c0077
+int id search_patient_phone 0x7f0c007b
 int id search_plate 0x7f0c005f
 int id search_src_text 0x7f0c0060
 int id search_voice_btn 0x7f0c0064
