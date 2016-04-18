@@ -49,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
                 attemptConn.execute(args);          //execute the asyncTask
             }
         });
+
+        //setup the toolbar
+        Toolbar toolbar = (Toolbar)findViewById(R.id.main_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
+
     }
 
     @Override

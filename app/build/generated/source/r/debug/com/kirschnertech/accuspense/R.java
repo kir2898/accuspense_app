@@ -2013,7 +2013,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0054;
         public static final int action_mode_bar_stub=0x7f0c0053;
         public static final int action_mode_close_button=0x7f0c003c;
-        public static final int action_settings=0x7f0c007f;
+        public static final int action_settings=0x7f0c0080;
         public static final int activity_chooser_view_content=0x7f0c003d;
         public static final int alertTitle=0x7f0c0047;
         public static final int always=0x7f0c002b;
@@ -2060,6 +2060,7 @@ containing a value of this type.
         public static final int line3=0x7f0c0071;
         public static final int listMode=0x7f0c000a;
         public static final int list_item=0x7f0c0041;
+        public static final int main_toolbar=0x7f0c007f;
         public static final int media_actions=0x7f0c006b;
         public static final int middle=0x7f0c002a;
         public static final int mini=0x7f0c0028;
@@ -2161,29 +2162,28 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040016;
         public static final int abc_select_dialog_material=0x7f040017;
         public static final int abc_simple_dropdown_hint=0x7f040018;
-        public static final int activity_main=0x7f040019;
-        public static final int content_main=0x7f04001a;
-        public static final int design_navigation_item=0x7f04001b;
-        public static final int design_navigation_item_header=0x7f04001c;
-        public static final int design_navigation_item_separator=0x7f04001d;
-        public static final int design_navigation_item_subheader=0x7f04001e;
-        public static final int design_navigation_menu=0x7f04001f;
-        public static final int layout_snackbar=0x7f040020;
-        public static final int layout_snackbar_include=0x7f040021;
-        public static final int notification_media_action=0x7f040022;
-        public static final int notification_media_cancel_action=0x7f040023;
-        public static final int notification_template_big_media=0x7f040024;
-        public static final int notification_template_big_media_narrow=0x7f040025;
-        public static final int notification_template_lines=0x7f040026;
-        public static final int notification_template_media=0x7f040027;
-        public static final int notification_template_part_chronometer=0x7f040028;
-        public static final int notification_template_part_time=0x7f040029;
-        public static final int search_patient=0x7f04002a;
-        public static final int search_patient_response=0x7f04002b;
-        public static final int select_dialog_item_material=0x7f04002c;
-        public static final int select_dialog_multichoice_material=0x7f04002d;
-        public static final int select_dialog_singlechoice_material=0x7f04002e;
-        public static final int support_simple_spinner_dropdown_item=0x7f04002f;
+        public static final int design_navigation_item=0x7f040019;
+        public static final int design_navigation_item_header=0x7f04001a;
+        public static final int design_navigation_item_separator=0x7f04001b;
+        public static final int design_navigation_item_subheader=0x7f04001c;
+        public static final int design_navigation_menu=0x7f04001d;
+        public static final int layout_snackbar=0x7f04001e;
+        public static final int layout_snackbar_include=0x7f04001f;
+        public static final int notification_media_action=0x7f040020;
+        public static final int notification_media_cancel_action=0x7f040021;
+        public static final int notification_template_big_media=0x7f040022;
+        public static final int notification_template_big_media_narrow=0x7f040023;
+        public static final int notification_template_lines=0x7f040024;
+        public static final int notification_template_media=0x7f040025;
+        public static final int notification_template_part_chronometer=0x7f040026;
+        public static final int notification_template_part_time=0x7f040027;
+        public static final int search_patient=0x7f040028;
+        public static final int search_patient_response=0x7f040029;
+        public static final int select_dialog_item_material=0x7f04002a;
+        public static final int select_dialog_multichoice_material=0x7f04002b;
+        public static final int select_dialog_singlechoice_material=0x7f04002c;
+        public static final int support_simple_spinner_dropdown_item=0x7f04002d;
+        public static final int toolbar=0x7f04002e;
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;
@@ -2219,6 +2219,11 @@ containing a value of this type.
         public static final int AlertDialog_AppCompat_Light=0x7f080077;
         public static final int Animation_AppCompat_Dialog=0x7f080078;
         public static final int Animation_AppCompat_DropDownUp=0x7f080079;
+        /**  Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+         */
         public static final int AppTheme=0x7f08007a;
         public static final int AppTheme_AppBarOverlay=0x7f08007b;
         public static final int AppTheme_NoActionBar=0x7f08002f;
