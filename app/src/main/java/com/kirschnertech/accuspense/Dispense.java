@@ -1,66 +1,69 @@
 package com.kirschnertech.accuspense;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
 
-import java.math.BigInteger;
-import java.net.*;
-import java.io.*;
-import java.util.zip.Inflater;
-
-public class MainActivity extends AppCompatActivity {
-    //class global variables
-    final String LOG_TAG = "MainActivity";
+/**
+ * Created by John on 4/18/2016.
+ */
+public class Dispense extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search_patient);
+        setContentView(R.layout.dispense);
         //set up all of the edit text fields to retrieve information from them
-        final EditText ipEditText = (EditText) findViewById(R.id.search_patient_ip);
-        final EditText nameEditText = (EditText) findViewById(R.id.search_patient_full_name);
+        final EditText ipEditText = (EditText) findViewById(R.id.dispense_ip);
+        final EditText userText = (EditText) findViewById(R.id.dispense_user);
+        final EditText pwdText = (EditText) findViewById(R.id.dispense_pwd);
+        final EditText medText = (EditText) findViewById(R.id.dispense_med);
+        final EditText amountText = (EditText) findViewById(R.id.dispense_amount);
+        final EditText weightText = (EditText) findViewById(R.id.dispense_weight);
+
 
         //set up the button and button listener
-        final Button connectButton = (Button) findViewById(R.id.search_patient_connect);
+        final Button connectButton = (Button) findViewById(R.id.dispense_connect);
         connectButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
                 //perform action on click
-                String command = "s";
-                String name = nameEditText.getText().toString();            //get the name string
-                String ipAddr = ipEditText.getText().toString();            //get the IP address string
-                //String phoneNumber = phoneEditText.getText().toString();
-                String args[] = {command,name,ipAddr};
-                AttemptConnection attemptConn = new AttemptConnection();        //create a new attemptconnection class
+                String command = "o";
+                String user = userText.getText().toString();        //get the name string
+                String ipAddr = ipEditText.getText().toString();    //get the IP address string
+                String pwd = pwdText.getText().toString();          //get the password
+                String med = medText.getText().toString();          //get the medication
+                String amount = amountText.getText().toString();    //get the amount
+                String weight = weightText.getText().toString();    //get the weight
+                String args[] = {ipAddr,command,user,pwd,med,weight,amount};
+                DispenseAttemptConnection attemptConn = new DispenseAttemptConnection();        //create a new attemptconnection class
                 attemptConn.execute(args);          //execute the asyncTask
             }
         });
-
         //setup the toolbar
         Toolbar toolbar = (Toolbar)findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
     }
 
     @Override
-     public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
@@ -76,22 +79,22 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.search_patient_menu) {
             //the search patient button was clicked
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            Intent intent = new Intent(Dispense.this, MainActivity.class);
             startActivity(intent);
             return true;
         }else if(id == R.id.restock_drawer_menu){
             //the restock drawer button was clicked
-            Intent intent = new Intent(MainActivity.this, Restock.class);
+            Intent intent = new Intent(Dispense.this, Restock.class);
             startActivity(intent);
             return true;
         }else if(id== R.id.dispense_drawer_menu){
             //the dispense drawer button was clicked
-            Intent intent = new Intent(MainActivity.this, Dispense.class);
+            Intent intent = new Intent(Dispense.this, Dispense.class);
             startActivity(intent);
             return true;
         }else if(id == R.id.add_patient_menu){
             //the add patient button was clicked
-            Intent intent = new Intent(MainActivity.this, AddPatient.class);
+            Intent intent = new Intent(Dispense.this, AddPatient.class);
             startActivity(intent);
             return true;
         }
@@ -99,14 +102,16 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     /**
      * AttemptConnection
      * class that will attempt to connect to a server that is specified in the current working
      * layout that has an ip address specified
      * currently works with search_patient.xml
      */
-    public class AttemptConnection extends AsyncTask<String,Void,String>
+    public class DispenseAttemptConnection extends AsyncTask<String,Void,String>
     {
+        final static String LOG_TAG = "dispense_Async";
 
         /**
          * doInBackground
@@ -120,12 +125,23 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params){
             //get the ip address to connect to
-            String ipAddr = params[2].toString();           //get the ip address from the parameters
-            String command = params[0].toString();			//get the command to send to the server
-            String message = params[1].toString();	        //get the paramter that gets sent after the command
-            Log.v(LOG_TAG, "ipAddr: "+ipAddr);
+            //{ipAddr,command,user,pwd,med,weight,amount};
+            String ipAddr = params[0].toString();           //get the ip address from the parameters
+            String command = "o";			//get the command to send to the server
+            String user = params[2].toString();	            //get the user
+            String pwd = params[3].toString();              //get the password
+            String med = params[4].toString();              //get the medication
+            String weight = params[5].toString();           //get the weight
+            String amount = params[6].toString();           //get the amount
+            Log.v(LOG_TAG, "ipAddr: " + ipAddr);
             Log.v(LOG_TAG, "command: "+command);
-            Log.v(LOG_TAG, "message: "+message);
+            Log.v(LOG_TAG, "user: "+user);
+            Log.v(LOG_TAG, "pwd: "+pwd);
+            Log.v(LOG_TAG, "med: "+med);
+            Log.v(LOG_TAG, "weight: "+weight);
+            Log.v(LOG_TAG, "amount: "+amount);
+            //create the message to send to the server
+            String msg = command+' '+user+' '+pwd+' '+med+' '+weight+' '+amount+'\0';
             String ret;         //return of the doInBackground
             //create the socket
             Socket sock;
@@ -152,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             //create the message to send to the host
-            String buffer = command+" "+message+" "+'\0';	//concat everything together
+            String buffer = msg;        //already created it above doing this to conform to
             Log.v(LOG_TAG, "Sending command to client: "+buffer);
             pStream.print(buffer);			//send the message to the server
 

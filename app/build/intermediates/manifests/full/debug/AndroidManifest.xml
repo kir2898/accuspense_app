@@ -26,6 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.kirschnertech.accuspense.Dispense" />
+        <activity android:name="com.kirschnertech.accuspense.Restock" />
+        <activity android:name="com.kirschnertech.accuspense.AddPatient" />
     </application>
 
 </manifest>

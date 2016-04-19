@@ -28,14 +28,15 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#fefefe"
-        android:text="158.83.66.57"
+        android:text="@string/str_ip_addr"
         android:textSize="12pt"
+        android:textColor="#111"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Full Name"
+        android:text="Search Parameter"
         android:textSize="12pt"
         android:id="@+id/textView3"
         android:editable="false"/>
@@ -47,24 +48,7 @@
         android:textSize="12pt"
         android:background="#fefefe"
         android:inputType="textPersonName"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Phone number"
-        android:textSize="12pt"
-        android:id="@+id/textView4"
-        android:editable="false"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:textSize="12pt"
-        android:background="#fefefe"
-        android:id="@+id/search_patient_phone"
+        android:textColor="#111"
         />
 
     <Button

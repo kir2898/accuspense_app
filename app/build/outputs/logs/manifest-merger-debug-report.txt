@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app
 	android:name
 		ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:7:5-23:19
+ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:7:5-26:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] B:\Google Drive\Senior Project\project\android_project\Accuspense\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] B:\Google Drive\Senior Project\project\android_project\Accuspense\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:22.2.0] B:\Google Drive\Senior Project\project\android_project\Accuspense\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\AndroidManifest.xml:22:5-20
@@ -53,6 +53,18 @@ category#android.intent.category.LAUNCHER
 ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.kirschnertech.accuspense.Dispense
+ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:23:9-45
+	android:name
+		ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:23:19-43
+activity#com.kirschnertech.accuspense.Restock
+ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:24:19-42
+activity#com.kirschnertech.accuspense.AddPatient
+ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:25:9-47
+	android:name
+		ADDED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml:25:19-45
 uses-sdk
 INJECTED from B:\Google Drive\Senior Project\project\android_project\Accuspense\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] B:\Google Drive\Senior Project\project\android_project\Accuspense\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43

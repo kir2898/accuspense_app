@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Patient"
+        android:id="@+id/add_textView2"
+        android:layout_gravity="center_horizontal"
+        android:editable="false"
+        android:textSize="14pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ip Address: "
+        android:id="@+id/add_textView"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:text="@string/str_ip_addr"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name: "
+        android:id="@+id/add_textView3"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth Day: "
+        android:id="@+id/add_textView4"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_birth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: "
+        android:id="@+id/add_textView5"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street Address: "
+        android:id="@+id/add_textView6"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_street"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City: "
+        android:id="@+id/add_textView7"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State: "
+        android:id="@+id/add_textView8"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zip: "
+        android:id="@+id/add_textView9"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/add_zip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:textSize="12pt"
+        android:id="@+id/add_connect"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

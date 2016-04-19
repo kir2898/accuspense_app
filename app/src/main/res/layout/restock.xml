@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restock Medication"
+        android:id="@+id/restock_textView2"
+        android:layout_gravity="center_horizontal"
+        android:editable="false"
+        android:textSize="14pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ip Address: "
+        android:id="@+id/restock_textView"
+        android:editable="false"
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/restock_ip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fefefe"
+        android:text="@string/str_ip_addr"
+        android:textSize="12pt"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="12pt"
+        android:id="@+id/restock_textView3"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/restock_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:background="#fefefe"
+        android:inputType="textPersonName"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="12pt"
+        android:id="@+id/restock_textView4"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/restock_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:background="#fefefe"
+        android:textColor="#111"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication"
+        android:textSize="12pt"
+        android:id="@+id/restock_textView5"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/restock_med"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:background="#fefefe"
+        android:inputType="text"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pill Weight"
+        android:textSize="12pt"
+        android:id="@+id/restock_textView6"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/restock_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:background="#fefefe"
+        android:inputType="number"
+        android:textColor="#111"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="12pt"
+        android:id="@+id/restock_textView7"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/restock_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:background="#fefefe"
+        android:inputType="number"
+        android:textColor="#111"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:textSize="12pt"
+        android:id="@+id/restock_connect"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
